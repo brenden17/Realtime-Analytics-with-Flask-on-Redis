@@ -1,4 +1,3 @@
-from uuid import uuid4
 from redis import Redis
 from random import getrandbits
 from datetime import datetime, timedelta
@@ -125,7 +124,6 @@ def bitmap_analytics(*args, **kwargs):
 
 
 class BitmapAnalytics(object):
-    """Flask"""
     def __init__(self, app):
         self.init_app(app)
 

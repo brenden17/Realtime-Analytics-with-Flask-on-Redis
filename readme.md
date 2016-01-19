@@ -11,7 +11,5 @@ pip install flask-session
 pip install redis
 ~~~
 * Javascript library for graph
-
-## Install
-
-
+ * http://dimplejs.org/
+ 
