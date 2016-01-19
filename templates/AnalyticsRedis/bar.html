@@ -1,0 +1,22 @@
+{#  http://dimplejs.org/ #}
+
+<div id="chartContainer-{{ rb.event }}">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script> 
+  <script type="text/javascript">
+    var svg = dimple.newSvg("#chartContainer-{{ rb.event }}", {{ rb.width }}, {{ rb.height }});
+
+    var data = {{ rb.data|safe }};
+    
+	var chart = new dimple.chart(svg, data);
+	chart.setBounds(80, "30px", "30%", "50%"); 
+	chart.addCategoryAxis("x", "{{ rb.x }}");
+	x.addOrderRule("action");
+	chart.addMeasureAxis("y", "{{ rb.y }}");
+	chart.addMeasureAxis("p", "{{ rb.y }}");
+	chart.addSeries("action", dimple.plot.bar);
+	chart.addLegend(140, 10, 360, 20, "right");
+	chart.draw();
+
+  </script>
+</div>
