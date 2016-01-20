@@ -13,3 +13,9 @@ pip install redis
 * Javascript library for graph
  * http://dimplejs.org/
  
+## How to use
+Just put snippet on page. Put event in request, Select events and Graph such as bar, pie.
+~~~
+{{ bitmap_analytics(['test', 'view', 'buy'], graph='pie') }}
+{{ bitmap_analytics(['view', 'buy']) }}
+~~~
