@@ -1,6 +1,7 @@
-from redis import Redis
 from random import getrandbits
 from datetime import datetime, timedelta
+
+from redis import Redis
 
 from flask import session
 from flask import Blueprint
@@ -22,7 +23,7 @@ class BitmapSession(object):
         session_id = session.sid
         user_id = redis.get(session_id)
         if not user_id:
-            user_id = getrandbits(24)
+            user_id = getrandbits(24) # random number of 24bit
             redis.set(session_id, user_id)
         # create event
         create_event(user_id, "buy")
@@ -142,5 +143,5 @@ class BitmapAnalytics(object):
 
 class AnalyticsRedis(object):
     def __init__(self, app):
-        bs = BitmapSession(app)
-        ba = BitmapAnalytics(app)
+        BitmapSession(app)
+        BitmapAnalytics(app)

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Realtime Analytics with Flask on Redis</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Realtime Analytics with Flask on Redis</title>
 </head>
 <body>
-	<h2>Analysis event tracks last week</h2>
-	{{ bitmap_analytics(['test', 'view', 'buy'], graph='pie') }}
-	
-	{{ bitmap_analytics(['view', 'buy']) }}
+  <h2>Analysis event tracks last week</h2>
+  {{ bitmap_analytics(['test', 'view', 'buy'], graph='pie') }}
+  
+  {{ bitmap_analytics(['view', 'buy']) }}
 
 </body>
 </html>
