@@ -21,4 +21,7 @@ Just put snippet on page. Put event in request, Select events and Graph such as 
 {{ bitmap_analytics(['view', 'buy']) }}
 ~~~
 
+![alt text](https://github.com/brenden17/Realtime-Analytics-with-Flask-on-Redis/blob/master/img/analysis.png "image")
+
+
 That's all.
