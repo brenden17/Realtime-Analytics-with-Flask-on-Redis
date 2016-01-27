@@ -1,4 +1,4 @@
-# Real Analytics with redis on Flask
+# Realtime Analytics with redis on Flask
 
 This is Flask extension which implements real-time and scalable analytics based on Redis 
 
