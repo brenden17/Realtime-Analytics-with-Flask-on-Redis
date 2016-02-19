@@ -2,7 +2,7 @@
 
 This is Flask extension which implements real-time and scalable analytics based on Redis 
 
-## Reqirements
+## Requirements
 
 * Redis server
 * Python library
